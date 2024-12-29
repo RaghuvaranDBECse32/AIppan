@@ -1,0 +1,58 @@
+:root {
+  --background: #fff;
+  --text-color: #000;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background);
+  color: var(--text-color);
+}
+
+header {
+  padding: 1rem;
+  background-color: #282828;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbox {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#chat-messages {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#user-input {
+  width: calc(100% - 80px);
+  padding: 0.5rem;
+}
+
+#send-button {
+  width: 70px;
+  padding: 0.5rem;
+}
+
+/* Dark Theme */
+body.dark {
+  --background: #121212;
+  --text-color: #fff;
+}
+
+/* Light Theme */
+body.light {
+  --background: #fff;
+  --text-color: #000;
+}
